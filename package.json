@@ -2,7 +2,7 @@
   "name": "portfolio-start",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pantokrator4.github.io/portfolio",
+  "homepage": "https://pantokrator4.github.io/portfolio-by-pantokrator",
   "dependencies": {
     "@babel/core": "7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
