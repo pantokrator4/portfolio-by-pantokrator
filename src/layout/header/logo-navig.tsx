@@ -4,13 +4,11 @@ import { Icon } from "../../components/icon/Icon";
 export const LogoNavig = () => {
     return (
         <StyledLogoNavig>
-            <nav>
-                <ul>
-                    <li><a href=""><Icon iconId={ "gitSvg" } width= { "32" } height={ "32" }/></a></li>
-                    <li><a href=""><Icon iconId={ "linkedSvg" } width= { "32" } height={ "32" }/></a></li>
-                    <li><a href=""><Icon iconId={ "telegramSvg" } width= { "28" } height={ "28" } viewBox={"0 -2 35 30"}/></a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="#"><Icon iconId={ "gitSvg" } width= { "32" } height={ "32" }/></a></li>
+                <li><a href="#"><Icon iconId={ "linkedSvg" } width= { "32" } height={ "32" }/></a></li>
+                <li><a href="#"><Icon iconId={ "telegramSvg" } width= { "28" } height={ "28" } viewBox={"0 -2 35 30"}/></a></li>
+            </ul>
         </StyledLogoNavig>
     )
 }
