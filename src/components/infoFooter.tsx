@@ -8,15 +8,18 @@ type infoPropsType = {
 export const Info = (props: infoPropsType) => {
     return(
         <InfoFooter>
-            <h3>{props.infoText}</h3>
-            <h3>{props.infoTel}</h3>
+            <span>{props.infoText}</span>
+            <span>{props.infoTel}</span>
         </InfoFooter>
     )
 }
 
 const InfoFooter = styled.div`
-    h3 {
-        margin: 0 0 0 0;
-        
+    input {
+        margin: 0;
+    }
+    span {
+        display: flex;
+        flex-direction: column;
     }
 `

@@ -18,7 +18,7 @@ export const Proj = (props: projectNamePropsType) => {
 }
 
 //отрегулировать StyledProj
-const StyledProj = styled.div`
+const StyledProj = styled.article`
     display: flex;
     flex-direction: column;
     background-color: #0F1624;

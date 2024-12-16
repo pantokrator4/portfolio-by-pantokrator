@@ -7,7 +7,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <TextCont>
-                <h2>Lorem ipsum dolor amet</h2>
+                <h1>Lorem ipsum dolor amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <Button>Let’s Begin</Button>
             </TextCont>
@@ -19,7 +19,7 @@ export const Main = () => {
     )
 }
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     width: 100%;
     height: 700px;
     background-color: #0F1624;
@@ -43,7 +43,7 @@ const TextCont = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    h2 {
+    h1 {
         color: white;
         font-size: 54px;
         margin-bottom: 0px;

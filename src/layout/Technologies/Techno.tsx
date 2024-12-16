@@ -14,16 +14,15 @@ export const Techno = () => {
             </ProgLinesDiv>
             <SkillsH2>Additional technologies and skills</SkillsH2>
             <IconsDiv>
-            <a href=""><Icon iconId = {"gitSkillSq"} viewBox = {"0 0 100 100"}  width= { "100" } height={ "100" }/></a>
-            <a href=""><Icon iconId = {"gitSqSvg"} viewBox = {"0 0 100 100"}  width= { "100" } height={ "100" }/></a>
-            <a href=""><Icon iconId = {"figmaSq"} viewBox = {"0 0 100 100"}  width= { "100" } height={ "100" }/></a>
-                
+                <Icon iconId = {"gitSkillSq"} viewBox = {"0 0 100 100"}  width= { "100" } height={ "100" }/>
+                <Icon iconId = {"gitSqSvg"} viewBox = {"0 0 100 100"}  width= { "100" } height={ "100" }/>
+                <Icon iconId = {"figmaSq"} viewBox = {"0 0 100 100"}  width= { "100" } height={ "100" }/>
             </IconsDiv>
         </StyledTechno>
     )
 }
 
-const StyledTechno = styled.div`
+const StyledTechno = styled.section`
     background-color: #0F1624;
     color: white;
     display: flex;

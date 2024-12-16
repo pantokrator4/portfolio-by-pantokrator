@@ -11,9 +11,9 @@ export const Footer = () => {
             </InfoDiv>
             <IconsDiv>
                 <ul>
-                    <li><a href=""><Icon iconId={ "gitSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
-                    <li><a href=""><Icon iconId={ "linkedSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
-                    <li><a href=""><Icon iconId={ "telegramSvg" } width= { "28" } height={ "28" } viewBox={"0 -2 35 30"}/></a></li>
+                    <li><a href="#"><Icon iconId={ "gitSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
+                    <li><a href="#"><Icon iconId={ "linkedSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
+                    <li><a href="#"><Icon iconId={ "telegramSvg" } width= { "28" } height={ "28" } viewBox={"0 -2 35 30"}/></a></li>
                 </ul>
             </IconsDiv>
         </StyledFooter>
@@ -33,7 +33,7 @@ const InfoDiv = styled.div`
     gap: 163px;
     align-items: center;
 `
-const IconsDiv = styled.div`
+const IconsDiv = styled.nav`
     ul {
         display: flex;
         gap: 25px;
