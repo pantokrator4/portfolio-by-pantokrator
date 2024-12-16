@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio-by-pantokrator/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-by-pantokrator/static/js/main.62290a05.js",
+    "static/js/787.25eaef86.chunk.js": "/portfolio-by-pantokrator/static/js/787.25eaef86.chunk.js",
+    "static/media/image1.png": "/portfolio-by-pantokrator/static/media/image1.d0b5fc3d19ac06e317d4.png",
+    "static/media/icons-sp.svg": "/portfolio-by-pantokrator/static/media/icons-sp.b53066e1826d97e1cf2f2c21e34b6155.svg",
+    "index.html": "/portfolio-by-pantokrator/index.html",
+    "main.e6c13ad2.css.map": "/portfolio-by-pantokrator/static/css/main.e6c13ad2.css.map",
+    "main.62290a05.js.map": "/portfolio-by-pantokrator/static/js/main.62290a05.js.map",
+    "787.25eaef86.chunk.js.map": "/portfolio-by-pantokrator/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.62290a05.js"
+  ]
+}
