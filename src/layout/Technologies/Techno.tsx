@@ -23,8 +23,7 @@ export const Techno = () => {
 }
 
 const StyledTechno = styled.section`
-    background-color: #0F1624;
-    color: white;
+    //background-color: #0F1624;
     display: flex;
     flex-direction: column;
     height: 1065px;

@@ -14,7 +14,6 @@ const StyledLogo = styled.a`
     text-decoration: none;
     display: flex;
     margin-top: 30px;
-    color: white;
     font-size: 30px;
 `
 

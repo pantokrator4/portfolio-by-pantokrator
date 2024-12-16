@@ -23,7 +23,6 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     height: 150px;
     background-color: #0F1624;
-    color: white;
     font-size: 22px;
     display: flex;
     justify-content: space-around;
@@ -37,7 +36,6 @@ const IconsDiv = styled.nav`
     ul {
         display: flex;
         gap: 25px;
-        list-style-type: none;
         margin: 58px 0 0 0;
         padding: 0;
     }

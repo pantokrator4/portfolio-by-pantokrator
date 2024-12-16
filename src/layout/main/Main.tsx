@@ -22,7 +22,7 @@ export const Main = () => {
 const StyledMain = styled.section`
     width: 100%;
     height: 700px;
-    background-color: #0F1624;
+    //background-color: #0F1624;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,14 +44,12 @@ const TextCont = styled.div`
     flex-direction: column;
     gap: 20px;
     h1 {
-        color: white;
         font-size: 54px;
         margin-bottom: 0px;
     }
     p {
         width: 482px;
         height: 81px;
-        color: white;
         font-size: 18px;
     }
 `

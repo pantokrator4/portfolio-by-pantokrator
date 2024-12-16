@@ -17,14 +17,12 @@ const StyledLogoNavig = styled.nav`
     ul {
         display: flex;
         gap: 25px;
-        list-style-type: none;
         margin-top: 34px;
         margin-bottom: 34px;
         padding-left: 0px;
     }
 
     a {
-        text-decoration: none;
         color: #FFFFFF;
     }
 `

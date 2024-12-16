@@ -28,8 +28,7 @@ export const Expirience = () => {
 //<svg width="889" height="25" viewBox="0 0 889 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 const ExpDiv = styled.section`
     height: 598px;
-    background-color: #161D2A;
-    color: white;
+    //background-color: #161D2A;
     display: flex;
     flex-direction: column;
 `

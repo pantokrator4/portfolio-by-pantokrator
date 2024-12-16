@@ -16,13 +16,7 @@ const StyledTextNavig = styled.nav`
     ul {
         display: flex;
         gap: 80px;
-        list-style-type: none;
         margin-top: 37px;
         padding-left: 0px;
-    }
-
-    a {
-        text-decoration: none;
-        color: #FFFFFF;
     }
 `
