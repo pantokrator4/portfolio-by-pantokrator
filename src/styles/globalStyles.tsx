@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: unset;
+    color: ${theme.colors.font};
 }
 
 ul {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const TextNavig = () => {
     return (
@@ -18,5 +19,5 @@ const StyledTextNavig = styled.nav`
         gap: 80px;
         margin-top: 37px;
         padding-left: 0px;
-    }
+        }
 `

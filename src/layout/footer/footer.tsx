@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import { Info } from "../../components/infoFooter";
 import { Icon } from "../../components/icon/Icon";
+import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <InfoDiv>
+            <FlexWrapper gap="163px" align="center">
                 <Info infoText={'Call me:'} infoTel={'123-456-789'}/>
                 <Info infoText={'Email:'} infoTel={'xxx@xyz.com'}/>
-            </InfoDiv>
+            </FlexWrapper>
             <IconsDiv>
                 <ul>
                     <li><a href="#"><Icon iconId={ "gitSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
@@ -27,11 +28,7 @@ const StyledFooter = styled.footer`
     display: flex;
     justify-content: space-around;
 `
-const InfoDiv = styled.div`
-    display: flex;
-    gap: 163px;
-    align-items: center;
-`
+
 const IconsDiv = styled.nav`
     ul {
         display: flex;

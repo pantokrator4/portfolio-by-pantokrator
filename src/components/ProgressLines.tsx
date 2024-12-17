@@ -20,9 +20,10 @@ export const ProgressLine = (props: lineNamePropsType) => {
 }
 
 const StyledProgressLineDiv = styled.div`
+    
     h3 {
         margin: 25px 0 5px 20px;
-        
+        display: flex;
     }
 `
 

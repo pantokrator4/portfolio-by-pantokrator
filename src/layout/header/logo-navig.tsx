@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 
+
 export const LogoNavig = () => {
     return (
         <StyledLogoNavig>
@@ -20,9 +21,5 @@ const StyledLogoNavig = styled.nav`
         margin-top: 34px;
         margin-bottom: 34px;
         padding-left: 0px;
-    }
-
-    a {
-        color: #FFFFFF;
     }
 `
