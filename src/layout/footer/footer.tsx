@@ -2,38 +2,29 @@ import styled from "styled-components";
 import { Info } from "../../components/infoFooter";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
+import { LogoNavig } from "../../components/logo-navig";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper gap="163px" align="center">
-                <Info infoText={'Call me:'} infoTel={'123-456-789'}/>
-                <Info infoText={'Email:'} infoTel={'xxx@xyz.com'}/>
-            </FlexWrapper>
-            <IconsDiv>
-                <ul>
-                    <li><a href="#"><Icon iconId={ "gitSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
-                    <li><a href="#"><Icon iconId={ "linkedSvg" } width= { "35" } height={ "35" } viewBox={"0 0 35 35"}/></a></li>
-                    <li><a href="#"><Icon iconId={ "telegramSvg" } width= { "28" } height={ "28" } viewBox={"0 -2 35 30"}/></a></li>
-                </ul>
-            </IconsDiv>
+            <Container>
+                <FlexWrapper justify="space-between">
+                    <FlexWrapper gap="163px" align="center">
+                        <Info infoText={'Call me:'} infoTel={'123-456-789'}/>
+                        <Info infoText={'Email:'} infoTel={'xxx@xyz.com'}/>
+                    </FlexWrapper>
+                    <LogoNavig/>
+                </FlexWrapper>
+            </Container>
         </StyledFooter>
     )
 }
 
 const StyledFooter = styled.footer`
-    height: 150px;
+    display: flex;
+    align-items: center;
+    min-height: 150px;
     background-color: #0F1624;
     font-size: 22px;
-    display: flex;
-    justify-content: space-around;
-`
-
-const IconsDiv = styled.nav`
-    ul {
-        display: flex;
-        gap: 25px;
-        margin: 58px 0 0 0;
-        padding: 0;
-    }
 `

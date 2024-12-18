@@ -14,13 +14,12 @@ export const Proj = (props: projectNamePropsType) => {
                 <h3>{props.projectName || "Project Name"}</h3>
                 <hr/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <Button>Look It Up</Button>
             </FlexWrapper>
-            <Button>Look It Up</Button>
         </StyledProj>
     )
 }
 
-//отрегулировать StyledProj
 const StyledProj = styled.article`
     background-color: #0F1624;
     border-radius: 50px 0 50px 0;
@@ -28,7 +27,7 @@ const StyledProj = styled.article`
     border-color: #A39D9D;
     height: 670px;
     width: 550px;
-    
+
     padding-top: 25px;
     h3 {
         font-size: 30px;
@@ -37,7 +36,7 @@ const StyledProj = styled.article`
     }
     p {
         font-size: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         width: 500px;
         margin: 0;
     }
@@ -55,4 +54,3 @@ const ImageProj = styled.img`
     height: 280px;
     object-fit: cover;
 `
-

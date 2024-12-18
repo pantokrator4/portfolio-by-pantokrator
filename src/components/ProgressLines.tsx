@@ -32,3 +32,8 @@ const StyledProgressLineDiv = styled.div`
 <Icon iconId={"indicatorCss"} viewBox = {"0 0 608 18"}  width= { "608" } height={ "18" }/>
 <Icon iconId={"indicatorReact"} viewBox = {"0 0 495 18"}  width= { "495" } height={ "18" }/>
 <Icon iconId={"indicatorCss"} viewBox = {"0 0 608 18"}  width= { "608" } height={ "18" }/> */}
+
+{/* <ProgressLine lineName = {"Html"} progressValue={"80"}/>
+<ProgressLine lineName = {"Css, Sass"} progressValue={"70"}/>
+<ProgressLine lineName = {"React"} progressValue={"60"}/>
+<ProgressLine lineName = {"Styled components"} progressValue={"70"}/> */}

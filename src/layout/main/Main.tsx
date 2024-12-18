@@ -2,28 +2,30 @@ import styled from "styled-components";
 import avatar from "../../assets/images/avatar.jpg"
 import { Button } from "../../components/Button";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
 
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align="center" justify="space-around">
-                <Text>
-                    <h1>Lorem ipsum dolor amet</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <Button>Let’s Begin</Button>
-                </Text>
-                <div>
+            <Container>
+                <FlexWrapper align="center" justify="space-between">
+                    <Text>
+                        <h1>Lorem ipsum dolor amet</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <Button>Let’s Begin</Button>
+                    </Text>
                     <Avatar src={avatar}/>
-                </div>
-            </FlexWrapper>
+                </FlexWrapper>
+            </Container>
         </StyledMain>
     )
 }
 
 const StyledMain = styled.section`
     min-height: 700px;
-    
+    display: flex;
+    align-items: center;
 `
 
 const Avatar = styled.img`
@@ -38,23 +40,14 @@ const Avatar = styled.img`
 const Text = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     h1 {
         font-size: 54px;
-        margin-bottom: 0px;
     }
     p {
         width: 482px;
         height: 81px;
         font-size: 18px;
+        text-align: left;
     }
 `
-
-// const StyledMain = styled.section`
-//     width: 100%;
-//     height: 700px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//     align-items: center;
-// `

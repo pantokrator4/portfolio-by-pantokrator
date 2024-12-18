@@ -14,10 +14,10 @@ export const TextNavig = () => {
 }
 
 const StyledTextNavig = styled.nav`
+    display: flex;
+    align-items: center;
     ul {
         display: flex;
         gap: 80px;
-        margin-top: 37px;
-        padding-left: 0px;
-        }
+    }
 `

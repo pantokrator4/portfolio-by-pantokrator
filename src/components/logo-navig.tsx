@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Icon } from "../../components/icon/Icon";
-
+import { Icon } from "./icon/Icon";
 
 export const LogoNavig = () => {
     return (
@@ -15,11 +14,10 @@ export const LogoNavig = () => {
 }
 
 const StyledLogoNavig = styled.nav`
+    display: flex;
+    align-items: center;
     ul {
         display: flex;
         gap: 25px;
-        margin-top: 34px;
-        margin-bottom: 34px;
-        padding-left: 0px;
     }
 `

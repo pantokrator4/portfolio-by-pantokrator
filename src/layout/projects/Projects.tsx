@@ -1,29 +1,33 @@
 import styled from "styled-components";
 import { Proj } from "../../components/Proj";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Container } from "../../components/Container";
 
 export const Projects = () => {
     return (
         <StyledProjects>
-            <h2>Projects</h2>
-            <FlexWrapper gap="42px" wrap="wrap" justify="center">
-                <Proj projectName = {'PROJECT 1'}/>
-                <Proj projectName = {'PROJECT 2'}/>
-                <Proj projectName = {'PROJECT 3'}/>
-                <Proj projectName = {'PROJECT 4'}/>
-                <Proj projectName = {'PROJECT 5'}/>
-                <Proj projectName = {'PROJECT 6'}/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper direction="column" gap="70px">
+                    <h2>Projects</h2>
+                    <FlexWrapper gap="40px" wrap="wrap">
+                        <Proj projectName = {'PROJECT 1'}/>
+                        <Proj projectName = {'PROJECT 2'}/>
+                        <Proj projectName = {'PROJECT 3'}/>
+                        <Proj projectName = {'PROJECT 4'}/>
+                        {/* <Proj projectName = {'PROJECT 5'}/> */}
+                        {/* <Proj projectName = {'PROJECT 6'}/> */}
+                    </FlexWrapper>
+                </FlexWrapper>
+            </Container>
         </StyledProjects>
     )
 }
 
 const StyledProjects = styled.section`
-    min-height: 1779px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    min-height: 1780px;
     h2 {
-    font-size: 46px;
-    margin: 100px 0 70px 150px;
+        font-size: 46px;
     }
 `
