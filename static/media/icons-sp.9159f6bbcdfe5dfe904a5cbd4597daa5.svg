@@ -99,4 +99,17 @@
         </linearGradient>
         </defs>
     </g>
+    <g id="ellipse">
+        <circle cx="12.5" cy="12.5" r="12.5" fill="white"/>
+    </g>
+    <g id="newTimeLine">
+        <rect width="880" height="10" rx="4" fill="url(#paint0_linear_4533_1233)"/>
+        <defs>
+        <linearGradient id="paint0_linear_4533_1233" x1="880" y1="4" x2="3.08913e-06" y2="4.00068" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#13ADC7"/>
+        <stop offset="0.666667" stop-color="#6978D1"/>
+        <stop offset="1" stop-color="#945DD6"/>
+        </linearGradient>
+        </defs>
+    </g>
 </svg>
