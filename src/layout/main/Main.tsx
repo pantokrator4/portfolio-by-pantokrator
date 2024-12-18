@@ -29,8 +29,8 @@ const StyledMain = styled.section`
 `
 
 const Avatar = styled.img`
-    width: 380px;
-    height: 450px;
+    /* width: 380px;
+    height: 450px;  */
     object-fit: cover ;
     border: 10px solid;
     border-color: #00C0FD;
@@ -45,9 +45,7 @@ const Text = styled.div`
         font-size: 54px;
     }
     p {
-        width: 482px;
-        height: 81px;
-        font-size: 18px;
+        max-width: 480px;
         text-align: left;
     }
 `

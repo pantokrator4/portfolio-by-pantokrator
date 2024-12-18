@@ -35,10 +35,8 @@ const StyledProj = styled.article`
         margin-bottom: 23px;
     }
     p {
-        font-size: 20px;
         padding-bottom: 30px;
-        width: 500px;
-        margin: 0;
+        max-width: 500px;
     }
     hr {
         margin: 0 0 40px 0;

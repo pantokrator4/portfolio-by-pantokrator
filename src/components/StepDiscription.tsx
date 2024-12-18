@@ -1,17 +1,35 @@
 import styled from "styled-components";
+import { Icon } from "./icon/Icon";
+import { FlexWrapper } from "./FlexWrapper";
+type yearSpanPropsType = {
+    yearSpan: string
+    textP: string
+}
 
-export const StepDiscription = () => {
+export const StepDiscription = (props: yearSpanPropsType) => {
     return (
-        <ElementP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.
-        </ElementP>
+        <StyledStepDiscription>
+            <FlexWrapper direction="column" align="center" gap="10px" position="relative">
+                <span>{props.yearSpan}</span>
+                <Icon iconId={"ellipse"} width={"100%"} height={"28"} viewBox={"0 0 25 30"}/>
+                <p>{props.textP}</p>
+            </FlexWrapper>
+        </StyledStepDiscription>
     )
 }
 
-const ElementP = styled.p`
-    font-size: 18px;
-    width: 260px;
-    height: 135px;
-    text-align: center;
-    margin: 0;
+const StyledStepDiscription = styled.div`
+    font-size: 26px;
+
 `
+// export const StepDiscription = () => {
+//     return (
+//         <ElementP>
+//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua.
+//         </ElementP>
+//     )
+// }
+
+// const ElementP = styled.p`
+//     text-align: center;
+// `

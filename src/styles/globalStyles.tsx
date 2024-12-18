@@ -36,4 +36,8 @@ section:nth-of-type(odd) {
 section:nth-of-type(even) {
     background-color: ${theme.colors.secondaryBg};
 }
+
+p {
+    font-size: 18px;
+}
 `

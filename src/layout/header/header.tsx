@@ -22,8 +22,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     display: flex;
     align-items: center;
-    opacity: 90%;
-    background-color: #0f1624;
+    background-color: hsla(220, 41%, 10%, 0.9);
     min-height: 100px;
     position: fixed;
     top: 0;

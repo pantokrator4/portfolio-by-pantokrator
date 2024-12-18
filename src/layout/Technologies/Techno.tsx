@@ -11,10 +11,10 @@ export const Techno = () => {
                 <FlexWrapper direction="column" gap="70px">
                     <h2>Technologies</h2>
                     <FlexWrapper direction="column" align="center">
-                        <ProgressLine lineName = {"Html"} iconId={"indicatorHtml"} viewBox={"0 0 900 18"}  width={ "900" } height={ "18" }/>
-                        <ProgressLine lineName = {"Css, Sass"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "900" } height={ "18" }/>
-                        <ProgressLine lineName = {"React"} iconId={"indicatorReact"} viewBox = {"0 0 900 18"}  width= { "900" } height={ "18" }/>
-                        <ProgressLine lineName = {"Styled components"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "900" } height={ "18" }/>
+                        <ProgressLine lineName = {"Html"} iconId={"indicatorHtml"} viewBox={"0 0 900 18"}  width={ "100%" } height={ "18" }/>
+                        <ProgressLine lineName = {"Css, Sass"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
+                        <ProgressLine lineName = {"React"} iconId={"indicatorReact"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
+                        <ProgressLine lineName = {"Styled components"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
                     </FlexWrapper>
                     <StyledText>Additional technologies and skills</StyledText>
                     <FlexWrapper gap="50px" justify="center">
