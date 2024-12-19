@@ -4,6 +4,7 @@ import { TextNavig } from "./navigation";
 import { LogoNavig } from "../../components/logo-navig";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
+import { MobileMenu } from "./mobileHeader/mobile-navigation";
 
 export const Header = () => {
     return (
@@ -13,6 +14,7 @@ export const Header = () => {
                 <Logo />
                 <TextNavig />
                 <LogoNavig />
+                <MobileMenu/>
             </FlexWrapper>
         </Container>
     </StyledHeader>
@@ -28,5 +30,5 @@ const StyledHeader = styled.header`
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 99;
 `;

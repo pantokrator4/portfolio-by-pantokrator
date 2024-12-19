@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Proj } from "../../components/Proj";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
+import { font } from "../../styles/Common";
 
 export const Projects = () => {
     return (
@@ -27,7 +28,8 @@ const StyledProjects = styled.section`
     display: flex;
     align-items: center;
     min-height: 1780px;
+    
     h2 {
-        font-size: 46px;
+        ${font({Fmax: 46, Fmin: 32, weight: 600})};
     }
 `

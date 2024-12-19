@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./Theme";
+import { font } from "./Common";
 
 export const GlobalStyles = createGlobalStyle`
 *,
@@ -38,6 +39,7 @@ section:nth-of-type(even) {
 }
 
 p {
-    font-size: 18px;
+    ${font({Fmax: 18, Fmin: 14})}
+    //font-size: 18px;
 }
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../styles/Theme"
 
 type FlexWrapperPropsType = {
     direction?: string
@@ -22,5 +23,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     position: ${props => props.position || "static"};
     top: ${props => props.top || "0"};
     z-index: ${props => props.zIndex || "0"};
-    width: ${props => props.width || "auto"}
+    width: ${props => props.width || "auto"};
 `
+

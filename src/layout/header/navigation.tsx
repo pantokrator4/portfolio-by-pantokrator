@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexWrapper } from "../../components/FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 export const TextNavig = () => {
     return (
@@ -19,5 +19,15 @@ const StyledTextNavig = styled.nav`
     ul {
         display: flex;
         gap: 80px;
+
+        li > a {
+            &:hover {
+                color: ${theme.colors.accentHover};
+            }
+        }
+    }
+
+    @media ${theme.media.tablet} {
+        display: none;
     }
 `

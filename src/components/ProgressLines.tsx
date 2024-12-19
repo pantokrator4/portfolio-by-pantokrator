@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "./icon/Icon";
+import { font } from "../styles/Common";
 
 type lineNamePropsType = {
     lineName: string
@@ -12,7 +13,7 @@ type lineNamePropsType = {
 
 export const ProgressLine = (props: lineNamePropsType) => {
     return (
-        <StyledProgressLineDiv>
+        <StyledProgressLineDiv >
         <h3>{props.lineName}</h3>
         <Icon iconId = {props.iconId} viewBox = {props.viewBox}  width= {props.width} height={props.height}/>
         </StyledProgressLineDiv>
@@ -24,6 +25,7 @@ const StyledProgressLineDiv = styled.div`
     h3 {
         margin: 25px 0 5px 20px;
         display: flex;
+        ${font({Fmax: 24, Fmin: 16, weight: 600})}
     }
 `
 

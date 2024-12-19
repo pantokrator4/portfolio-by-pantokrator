@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "./icon/Icon";
+import { theme } from "../styles/Theme";
 
 export const LogoNavig = () => {
     return (
@@ -19,5 +20,17 @@ const StyledLogoNavig = styled.nav`
     ul {
         display: flex;
         gap: 25px;
+
+        li > a {
+            display: flex;
+            &:hover{
+                color: ${theme.colors.accentHover};
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    @media ${theme.media.tablet} {
+        display: none;
     }
 `

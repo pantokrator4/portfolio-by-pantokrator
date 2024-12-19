@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Button } from "./Button";
 import googleImage from "../../src/assets/images/image1.png"
 import { FlexWrapper } from "./FlexWrapper";
+import { theme } from "../styles/Theme";
+import { font } from "../styles/Common";
 type projectNamePropsType = {
     projectName?: string
 }
@@ -27,8 +29,8 @@ const StyledProj = styled.article`
     border-color: #A39D9D;
     height: 670px;
     width: 550px;
-
     padding-top: 25px;
+    
     h3 {
         font-size: 30px;
         margin-top: 40px;
@@ -46,9 +48,32 @@ const StyledProj = styled.article`
         border-style: none;
         border-radius: 10px;
     }
+
+    @media ${theme.media.mobile} {
+        height: 470px;
+        width: 385px;
+        h3 {
+            ${font({Fmax: 30, Fmin: 22, weight: 600})};
+            //font-size: 24px;
+            margin: 20px 0; 
+        }
+        hr {
+            width: 210px;
+            margin: 0 0 20px 0;
+        }
+        p {
+            max-width: 350px;
+        }
+    }
 `
 const ImageProj = styled.img`
     width: 500px;
     height: 280px;
     object-fit: cover;
+
+    @media ${theme.media.mobile} {
+        height: 196px;
+        width: 330px;
+        border-radius: 10px;
+    }
 `

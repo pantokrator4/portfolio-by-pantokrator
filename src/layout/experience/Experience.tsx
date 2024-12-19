@@ -3,6 +3,8 @@ import { StepDiscription } from "../../components/StepDiscription";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
+import { font } from "../../styles/Common";
+import { theme } from "../../styles/Theme"
 
 export const Expirience = () => {
     return (
@@ -10,9 +12,6 @@ export const Expirience = () => {
             <Container>
                 <FlexWrapper direction="column" gap="70px" >
                     <h2>Experience</h2>
-                    {/* <FlexWrapper justify="center">
-                        <Icon iconId={'newTimeLine'} width={'80%'} height={'25'} viewBox={'0 0 880 25'}/>
-                    </FlexWrapper> */}
                     <div style={{position:"relative"}}>
                     <FlexWrapper justify="center" position="absolute" top="56px" width="100%">
                         <Icon iconId={'newTimeLine'} width={'78%'} height={'25px'} viewBox={'0 0 880 25'}/>
@@ -36,14 +35,7 @@ const ExpDiv = styled.section`
     align-items: center;
 
     h2 {
-        font-size: 46px;
+        ${font({Fmax: 46, Fmin: 32, weight: 600})}
     }
 `
-// const StyledList = styled.ul`
-//     display: flex;
-//     gap: 230px;
-//     margin: 0 0 5px 0;
-//     li {
-//         font-size: 26px;
-//     }
-// `
+
