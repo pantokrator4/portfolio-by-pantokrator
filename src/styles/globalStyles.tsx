@@ -11,6 +11,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: ${theme.colors.font};
     margin: 0;

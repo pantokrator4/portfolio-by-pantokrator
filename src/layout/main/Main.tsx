@@ -93,4 +93,8 @@ const Text = styled.div`
         text-align: left;
     }
 
+    @media ${theme.media.mobile} {
+        gap: 20px;
+    }
+
 `

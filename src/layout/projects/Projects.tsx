@@ -3,10 +3,12 @@ import { Proj } from "../../components/Proj";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { font } from "../../styles/Common";
+import { theme } from "../../styles/Theme";
+
 
 export const Projects = () => {
     return (
-        <StyledProjects>
+        <StyledProjects id="projectSectionId">
             <Container>
                 <FlexWrapper direction="column" gap="70px">
                     <h2>Projects</h2>
@@ -31,5 +33,18 @@ const StyledProjects = styled.section`
     
     h2 {
         ${font({Fmax: 46, Fmin: 32, weight: 600})};
+    }
+
+
+    @media ${theme.media.tablet} {
+        ${FlexWrapper} {
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
     }
 `

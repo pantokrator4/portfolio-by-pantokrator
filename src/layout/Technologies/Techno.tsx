@@ -8,7 +8,7 @@ import { theme } from "../../styles/Theme";
 
 export const Techno = () => {
     return (
-        <StyledTechno>
+        <StyledTechno id="technoSectionId">
             <Container>
                 <FlexWrapper direction="column" gap="70px">
                     <h2>Technologies</h2>

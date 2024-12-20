@@ -5,9 +5,9 @@ export const TextNavig = () => {
     return (
         <StyledTextNavig>
             <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="#projectSectionId">Projects</a></li>
+                <li><a href="#technoSectionId">Technologies</a></li>
+                <li><a href="#expSectionId">Experience</a></li>
             </ul>
         </StyledTextNavig>
     )

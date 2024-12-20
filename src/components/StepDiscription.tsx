@@ -11,9 +11,9 @@ type yearSpanPropsType = {
 export const StepDiscription = (props: yearSpanPropsType) => {
     return (
         <StyledStepDiscription>
-            <FlexWrapper direction="column" align="center" gap="10px" position="relative" className="steps-container">
+            <FlexWrapper direction="column" align="center" gap="10px" position="relative">
                 <span>{props.yearSpan}</span>
-                <Icon iconId={"ellipse"} width={"100%"} height={"28"} viewBox={"0 0 25 30"}/>
+                <Icon iconId={"ellipse"} width={"25"} height={"28"} viewBox={"0 0 25 30"}/>
                 <p>{props.textP}</p>
             </FlexWrapper>
         </StyledStepDiscription>
@@ -22,11 +22,16 @@ export const StepDiscription = (props: yearSpanPropsType) => {
 
 const StyledStepDiscription = styled.div`
     font-size: 26px;
+    
 
     @media ${theme.media.mobile} {
-        .steps-container {
-            display: none;
-        
+        ${FlexWrapper} {
+            flex-direction: row;
+            gap: 20px;
         }
+
+        span{
+        width:50px;
+        } 
     }
 `

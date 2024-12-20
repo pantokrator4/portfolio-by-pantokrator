@@ -4,7 +4,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { LogoNavig } from "../../components/logo-navig";
 import { font } from "../../styles/Common";
-import { theme } from "../../styles/Theme";
+import { theme } from "../../styles/Theme"
 
 export const Footer = () => {
     return (

@@ -15,11 +15,8 @@ export const Info = (props: infoPropsType) => {
 }
 
 const InfoFooter = styled.div`
-    input {
-        margin: 0;
-    }
     span {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 `
