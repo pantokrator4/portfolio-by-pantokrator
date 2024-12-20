@@ -12,7 +12,7 @@ export const Projects = () => {
             <Container>
                 <FlexWrapper direction="column" gap="70px">
                     <h2>Projects</h2>
-                    <FlexWrapper gap="40px" wrap="wrap" justify="center">
+                    <FlexWrapper gap="40px" wrap="wrap" justify="center" grow="1">
                         <Proj projectName = {'PROJECT 1'}/>
                         <Proj projectName = {'PROJECT 2'}/>
                         <Proj projectName = {'PROJECT 3'}/>
@@ -44,7 +44,7 @@ const StyledProjects = styled.section`
         }
 
         h2 {
-            margin-top: 20px;
+            margin-top: 50px;
         }
     }
 `

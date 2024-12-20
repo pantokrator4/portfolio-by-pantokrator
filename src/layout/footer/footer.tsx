@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Info } from "../../components/infoFooter";
+import { InfoFooter } from "../../components/infoFooter";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { LogoNavig } from "../../components/logo-navig";
@@ -11,9 +11,9 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
                 <FlexWrapper justify="space-between">
-                    <FlexWrapper gap="163px" align="center">
-                        <Info infoText={'Call me:'} infoTel={'123-456-789'}/>
-                        <Info infoText={'Email:'} infoTel={'xxx@xyz.com'}/>
+                    <FlexWrapper gap="160px">
+                        <InfoFooter infoText={'Call me:'} infoTel={'123-456-789'}/>
+                        <InfoFooter infoText={'Email:'} infoTel={'xxx@xyz.com'}/>
                     </FlexWrapper>
                     <LogoNavig/>
                 </FlexWrapper>
@@ -26,6 +26,6 @@ const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     min-height: 150px;
-    background-color: #0F1624;
+    background-color: ${theme.colors.primaryBg};
     ${font({Fmax: 22, Fmin: 14, weight: 400})}
 `

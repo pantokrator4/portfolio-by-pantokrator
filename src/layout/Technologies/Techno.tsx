@@ -11,8 +11,8 @@ export const Techno = () => {
         <StyledTechno id="technoSectionId">
             <Container>
                 <FlexWrapper direction="column" gap="70px">
-                    <h2>Technologies</h2>
-                    <FlexWrapper direction="column" align="center">
+                    <TitleText>Technologies</TitleText>
+                    <FlexWrapper direction="column" align="center" gap="10px">
                         <ProgressLine lineName = {"Html"} iconId={"indicatorHtml"} viewBox={"0 0 900 18"}  width={ "100%" } height={ "18" }/>
                         <ProgressLine lineName = {"Css, Sass"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
                         <ProgressLine lineName = {"React"} iconId={"indicatorReact"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
@@ -20,9 +20,9 @@ export const Techno = () => {
                     </FlexWrapper>
                     <StyledText>Additional technologies and skills</StyledText>
                     <FlexWrapper gap="50px" justify="center">
-                        <Icon iconId = {"gitSkillSq"} viewBox = {"0 0 100 100"}  width= { "15%" } height={ "15%" }/>
-                        <Icon iconId = {"gitSqSvg"} viewBox = {"0 0 100 100"}  width= { "15%" } height={ "15%" }/>
-                        <Icon iconId = {"figmaSq"} viewBox = {"0 0 100 100"}  width= { "15%" } height={ "15%" }/>
+                        <Icon iconId = {"gitSkillSq"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%%" }/>
+                        <Icon iconId = {"gitSqSvg"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%" }/>
+                        <Icon iconId = {"figmaSq"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%" }/>
                     </FlexWrapper>
                 </FlexWrapper>
             </Container>
@@ -35,14 +35,24 @@ const StyledTechno = styled.section`
     align-items: center;
 
     min-height: 1065px;
-    h2 {
-        ${font({Fmax: 46, Fmin: 32, weight: 600})}
-    }
 
+    @media ${theme.media.tablet} {
+        min-height: 800px;
+    }
+    
     @media ${theme.media.mobile} {
-        min-height: 880px;
+        min-height: 600px;
+
+        ${FlexWrapper} {
+            gap: 20px;
+        }
     }
 `
+const TitleText = styled.h2`
+    ${font({Fmax: 46, Fmin: 32, weight: 600})}
+`
+
 const StyledText = styled.h2`
     text-align: center;
+    ${font({Fmax: 46, Fmin: 24, weight: 600})}
 `

@@ -16,7 +16,7 @@ export const Expirience = () => {
                     <FlexWrapper id="iconContainer"  justify="center" position="absolute" top="56px" width="100%">
                         <Icon iconId={'newTimeLine'} width={'78%'} height={'25px'} viewBox={'0 0 880 25'}/>
                     </FlexWrapper>
-                    <FlexWrapper justify="center" gap="35px" id="wrapContent" grow="1">
+                    <FlexWrapper justify="center" gap="35px" id="wrapContent">
                         <StepDiscription yearSpan ={"2019"} textP = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua."}/>
                         <StepDiscription yearSpan ={"2021"} textP = {"Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin"}/>
                         <StepDiscription yearSpan ={"2022"} textP = {"Lorem ipsum dolor met, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  et dolore magna aliqua."}/>
@@ -36,6 +36,12 @@ const ExpDiv = styled.section`
 
     h2 {
         ${font({Fmax: 46, Fmin: 32, weight: 600})}
+    }
+
+    @media ${theme.media.tablet} {
+        #iconContainer {
+            top: 54px;
+        }
     }
 
     @media ${theme.media.mobile} {

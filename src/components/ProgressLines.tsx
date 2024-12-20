@@ -23,7 +23,7 @@ export const ProgressLine = (props: lineNamePropsType) => {
 const StyledProgressLineDiv = styled.div`
     
     h3 {
-        margin: 25px 0 5px 20px;
+        margin-bottom: 5px;
         display: flex;
         ${font({Fmax: 24, Fmin: 16, weight: 600})}
     }

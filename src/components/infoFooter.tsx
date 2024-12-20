@@ -1,22 +1,16 @@
 import styled from "styled-components";
+import { FlexWrapper } from "./FlexWrapper";
 
 type infoPropsType = {
     infoText: string
     infoTel: string
 }
 
-export const Info = (props: infoPropsType) => {
+export const InfoFooter = (props: infoPropsType) => {
     return(
-        <InfoFooter>
+        <FlexWrapper direction="column">
             <span>{props.infoText}</span>
             <span>{props.infoTel}</span>
-        </InfoFooter>
+        </FlexWrapper>
     )
 }
-
-const InfoFooter = styled.div`
-    span {
-        display: flex;
-        justify-content: center;
-    }
-`
