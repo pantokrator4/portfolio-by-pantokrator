@@ -11,7 +11,7 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
                 <FlexWrapper justify="space-between">
-                    <FlexWrapper gap="160px">
+                    <FlexWrapper gap="160px" id="changeGap">
                         <InfoFooter infoText={'Call me:'} infoTel={'123-456-789'}/>
                         <InfoFooter infoText={'Email:'} infoTel={'xxx@xyz.com'}/>
                     </FlexWrapper>
@@ -28,4 +28,15 @@ const StyledFooter = styled.footer`
     min-height: 150px;
     background-color: ${theme.colors.primaryBg};
     ${font({Fmax: 22, Fmin: 14, weight: 400})}
+
+    ${FlexWrapper} {}
+
+    @media ${theme.media.tablet} {
+        ${FlexWrapper} {
+            justify-content: center;
+            #changeGap {
+                gap: 80px;
+            }
+        }
+    }
 `

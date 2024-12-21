@@ -25,6 +25,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     top: ${props => props.top || "0"};
     z-index: ${props => props.zIndex || "0"};
     width: ${props => props.width || "auto"};
-    
 `
 

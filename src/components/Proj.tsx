@@ -11,7 +11,7 @@ type projectNamePropsType = {
 export const Proj = (props: projectNamePropsType) => {
     return (
         <StyledProj>
-            <FlexWrapper direction="column" align="center">
+            <FlexWrapper direction="column" align="center" gap="30px">
                 <ImageProj src={googleImage}/>
                 <h3>{props.projectName || "Project Name"}</h3>
                 <hr/>
@@ -32,16 +32,14 @@ const StyledProj = styled.article`
     padding-top: 25px;
     
     h3 {
-        font-size: 30px;
-        margin-top: 40px;
-        margin-bottom: 23px;
-    }
-    p {
-        padding-bottom: 30px;
+        ${font({Fmax: 30, Fmin: 22, weight: 600})};
+        }
+    
+        p {
         max-width: 500px;
+        
     }
     hr {
-        margin: 0 0 40px 0;
         width: 300px;
         height: 4px;
         background: linear-gradient(90deg, #13ADC7, #6978D1, #945DD6);
@@ -50,16 +48,11 @@ const StyledProj = styled.article`
     }
 
     @media ${theme.media.mobile} {
-        height: 470px;
+        height: 500px;
         width: 385px;
-        h3 {
-            ${font({Fmax: 30, Fmin: 22, weight: 600})};
-            //font-size: 24px;
-            margin: 20px 0; 
-        }
+        
         hr {
             width: 210px;
-            margin: 0 0 20px 0;
         }
         p {
             max-width: 350px;
@@ -67,13 +60,9 @@ const StyledProj = styled.article`
     }
 `
 const ImageProj = styled.img`
-    width: 500px;
-    height: 280px;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    height: 100%;
     object-fit: cover;
-
-    @media ${theme.media.mobile} {
-        height: 196px;
-        width: 330px;
-        border-radius: 10px;
-    }
+    padding: 0 15px;
 `

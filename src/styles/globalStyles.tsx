@@ -43,7 +43,7 @@ section:nth-of-type(even) {
 }
 
 p {
-    ${font({Fmax: 18, Fmin: 14})}
+    ${font({Fmax: 18, Fmin: 16})}
     //font-size: 18px;
 }
 `
