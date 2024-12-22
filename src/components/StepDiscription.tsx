@@ -29,9 +29,8 @@ const StyledStepDiscription = styled.div`
             flex-direction: row;
             gap: 20px;
         }
-
         span{
-        width:50px;
+            width: 50px;
         } 
     }
 `

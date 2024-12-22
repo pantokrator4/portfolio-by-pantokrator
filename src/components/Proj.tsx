@@ -11,7 +11,7 @@ type projectNamePropsType = {
 export const Proj = (props: projectNamePropsType) => {
     return (
         <StyledProj>
-            <FlexWrapper direction="column" align="center" gap="30px">
+            <FlexWrapper direction="column" align="center">
                 <ImageProj src={googleImage}/>
                 <h3>{props.projectName || "Project Name"}</h3>
                 <hr/>
@@ -29,16 +29,19 @@ const StyledProj = styled.article`
     border-color: #A39D9D;
     height: 670px;
     width: 550px;
-    padding-top: 25px;
+    padding: 25px 25px 40px 25px;
+    //padding-top: 25px;
     
     h3 {
-        ${font({Fmax: 30, Fmin: 22, weight: 600})};
+        margin: 40px 0 25px;
+            ${font({Fmax: 30, Fmin: 22, weight: 600})};
         }
     
-        p {
+    p {
+        margin: 40px 0 50px;
         max-width: 500px;
-        
     }
+    
     hr {
         width: 300px;
         height: 4px;
@@ -50,19 +53,29 @@ const StyledProj = styled.article`
     @media ${theme.media.mobile} {
         height: 500px;
         width: 385px;
+
+        h3 {
+            margin: 28px 0 18px;
+        }
         
         hr {
             width: 210px;
+            
         }
         p {
             max-width: 350px;
+            margin: 28px 0 35px;
         }
     }
 `
+
+
+
 const ImageProj = styled.img`
     box-sizing: border-box;
-    width: calc(100% - 20px);
+    //width: calc(100% - 20px);
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 0 15px;
+    //padding: 0 15px;
 `

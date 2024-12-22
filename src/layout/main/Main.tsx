@@ -53,6 +53,7 @@ const AvatarWrapper = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 50px 0 50px 0;
+    margin: 0 5px;
 
     @media ${theme.media.mobile} {
         width: 300px;
@@ -82,7 +83,7 @@ const Avatar = styled.img`
 const Text = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    
     h1 {
         ${font({Fmax: 50, Fmin: 36, weight: 600})};
         text-align: left;
@@ -91,10 +92,11 @@ const Text = styled.div`
     p {
         max-width: 480px;
         text-align: left;
+        margin: 15px 0 60px 0;
     }
 
     @media ${theme.media.mobile} {
-        gap: 20px;
+        //gap: 20px;
     }
 
 `

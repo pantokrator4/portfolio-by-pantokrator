@@ -10,7 +10,7 @@ export const Expirience = () => {
     return (
         <ExpDiv id="expSectionId">
             <Container>
-                <FlexWrapper direction="column" gap="70px">
+                <FlexWrapper direction="column">
                     <h2>Experience</h2>
                     <div style={{position:"relative"}}>
                     <FlexWrapper id="iconContainer"  justify="center" position="absolute" top="56px" width="100%">
@@ -30,12 +30,16 @@ export const Expirience = () => {
 }
 
 const ExpDiv = styled.section`
-    min-height: 598px;
+    min-height: 600px;
     display: flex;
-    align-items: center;
 
     h2 {
-        ${font({Fmax: 46, Fmin: 32, weight: 600})}
+        margin: 100px 0 70px 0;
+        ${font({Fmax: 46, Fmin: 32, weight: 600})};
+
+        @media ${theme.media.mobile} {
+        margin: 70px 0 50px;
+    }
     }
 
     @media ${theme.media.tablet} {

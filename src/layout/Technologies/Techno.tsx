@@ -10,9 +10,9 @@ export const Techno = () => {
     return (
         <StyledTechno id="technoSectionId">
             <Container>
-                <FlexWrapper direction="column" gap="70px">
+                <FlexWrapper direction="column">
                     <TitleText>Technologies</TitleText>
-                    <FlexWrapper direction="column" align="center" gap="10px">
+                    <FlexWrapper direction="column" align="center" gap="25px">
                         <ProgressLine lineName = {"Html"} lineWidth= {"60%"}/>
                         <ProgressLine lineName = {"Css, Sass"} lineWidth= {"45%"}/>
                         <ProgressLine lineName = {"React"} lineWidth= {"25%"}/>
@@ -32,27 +32,31 @@ export const Techno = () => {
 
 const StyledTechno = styled.section`
     display: flex;
-    align-items: center;
-
-    min-height: 1065px;
+    min-height: 1000px;
 
     @media ${theme.media.tablet} {
         min-height: 800px;
     }
-    
-    @media ${theme.media.mobile} {
-        min-height: 600px;
 
-        ${FlexWrapper} {
-            gap: 20px;
-        }
+    @media ${theme.media.mobile} {
+        min-height: 700px;
     }
 `
 const TitleText = styled.h2`
-    ${font({Fmax: 46, Fmin: 32, weight: 600})}
+    margin: 100px 0 70px 0;
+    ${font({Fmax: 46, Fmin: 32, weight: 600})};
+
+    @media ${theme.media.mobile} {
+        margin: 70px 0 50px;
+    }
 `
 
 const StyledText = styled.h2`
     text-align: center;
-    ${font({Fmax: 46, Fmin: 24, weight: 600})}
+    margin: 120px 0 70px 0;
+    ${font({Fmax: 46, Fmin: 24, weight: 600})};
+
+    @media ${theme.media.mobile} {
+        margin: 70px 0 50px;
+    }
 `
