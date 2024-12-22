@@ -13,14 +13,14 @@ export const Techno = () => {
                 <FlexWrapper direction="column" gap="70px">
                     <TitleText>Technologies</TitleText>
                     <FlexWrapper direction="column" align="center" gap="10px">
-                        <ProgressLine lineName = {"Html"} iconId={"indicatorHtml"} viewBox={"0 0 900 18"}  width={ "100%" } height={ "18" }/>
-                        <ProgressLine lineName = {"Css, Sass"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
-                        <ProgressLine lineName = {"React"} iconId={"indicatorReact"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
-                        <ProgressLine lineName = {"Styled components"} iconId={"indicatorCss"} viewBox = {"0 0 900 18"}  width= { "100%" } height={ "18" }/>
+                        <ProgressLine lineName = {"Html"} lineWidth= {"60%"}/>
+                        <ProgressLine lineName = {"Css, Sass"} lineWidth= {"45%"}/>
+                        <ProgressLine lineName = {"React"} lineWidth= {"25%"}/>
+                        <ProgressLine lineName = {"Styled components"} lineWidth= {"15%"}/>
                     </FlexWrapper>
                     <StyledText>Additional technologies and skills</StyledText>
                     <FlexWrapper gap="50px" justify="center">
-                        <Icon iconId = {"gitSkillSq"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%%" }/>
+                        <Icon iconId = {"gitSkillSq"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%" }/>
                         <Icon iconId = {"gitSqSvg"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%" }/>
                         <Icon iconId = {"figmaSq"} viewBox = {"0 0 100 100"}  width= { "10%" } height={ "10%" }/>
                     </FlexWrapper>
