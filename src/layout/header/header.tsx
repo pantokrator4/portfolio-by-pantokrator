@@ -7,28 +7,28 @@ import { Container } from "../../components/Container";
 import { MobileMenu } from "./mobileHeader/mobile-navigation";
 
 export const Header = () => {
-    return (
+  return (
     <StyledHeader>
-        <Container>
-            <FlexWrapper justify="space-between">
-                <Logo />
-                <TextNavig />
-                <LogoNavig />
-                <MobileMenu/>
-            </FlexWrapper>
-        </Container>
+      <Container>
+        <FlexWrapper justify="space-between">
+          <Logo />
+          <TextNavig />
+          <LogoNavig />
+          <MobileMenu />
+        </FlexWrapper>
+      </Container>
     </StyledHeader>
-    );
+  );
 };
 
 const StyledHeader = styled.header`
-    display: flex;
-    align-items: center;
-    background-color: hsla(220, 41%, 10%, 0.9);
-    min-height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
+  display: flex;
+  align-items: center;
+  background-color: hsla(220, 41%, 10%, 0.9);
+  min-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 `;
