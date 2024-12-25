@@ -7,7 +7,7 @@ export const Button = styled.button`
   height: 60px;
   border-radius: 80px;
   border-style: none;
-  background: linear-gradient(90deg, #13adc7, #6978d1, #945dd6);
+  background: linear-gradient${theme.colors.tripleGradient};
   font-size: 20px;
   font-weight: 600;
   color: ${theme.colors.font};

@@ -6,8 +6,13 @@ import { Container } from "../../components/Container";
 import { theme } from "../../styles/Theme";
 import { font } from "../../styles/Common";
 import Typewriter from "typewriter-effect";
+import { useState } from "react";
+import Modal from "../../components/Modal";
+import { ModalContentForm } from '../../components/ModalContentForm'
 
 export const Main = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <StyledMain>
       <Container>
@@ -20,8 +25,8 @@ export const Main = () => {
                   strings: [
                     "Lorem ipsum dolor sit amet",
                     "consectetur adipiscing elit",
-                    "sed do eiusmod tempor incididunt",
-                    "ut labore et dolore magna aliqua",
+                    "sed do eiusmod tempor incidid",
+                    "ut labore et dolore magna",
                   ],
                   autoStart: true,
                   loop: true,
@@ -33,7 +38,10 @@ export const Main = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <Button>Let’s Begin</Button>
+            <Button onClick={() => setIsOpen(true)}>Contact Me</Button>
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+              <ModalContentForm/>
+            </Modal>
           </Text>
           <AvatarWrapper>
             <Avatar src={avatar} />
