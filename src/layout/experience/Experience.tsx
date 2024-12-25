@@ -63,6 +63,7 @@ export const Expirience = () => {
 const ExpDiv = styled.section`
   min-height: 600px;
   display: flex;
+  position: relative;
 
   h2 {
     margin: 100px 0 70px 0;

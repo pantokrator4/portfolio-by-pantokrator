@@ -4,6 +4,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { font } from "../../styles/Common";
 import { theme } from "../../styles/Theme";
+import { Fade } from "react-awesome-reveal";
 
 export const Projects = () => {
   return (
@@ -12,12 +13,12 @@ export const Projects = () => {
         <FlexWrapper direction="column">
           <h2>Projects</h2>
           <FlexWrapper gap="40px" wrap="wrap" justify="center">
-            <Proj projectName={"PROJECT 1"} />
-            <Proj projectName={"PROJECT 2"} />
-            <Proj projectName={"PROJECT 3"} />
-            <Proj projectName={"PROJECT 4"} />
-            {/* <Proj projectName = {'PROJECT 5'}/> */}
-            {/* <Proj projectName = {'PROJECT 6'}/> */}
+            <Fade cascade={true}>
+              <Proj projectName={"PROJECT 1"} />
+              <Proj projectName={"PROJECT 2"} />
+              <Proj projectName={"PROJECT 3"} />
+              <Proj projectName={"PROJECT 4"} />
+            </Fade>
           </FlexWrapper>
         </FlexWrapper>
       </Container>
@@ -28,6 +29,7 @@ export const Projects = () => {
 const StyledProjects = styled.section`
   display: flex;
   min-height: 1780px;
+  position: relative;
 
   ${FlexWrapper} {
     &:last-child {

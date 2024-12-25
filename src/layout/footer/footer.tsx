@@ -31,6 +31,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 150px;

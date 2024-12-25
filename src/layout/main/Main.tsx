@@ -9,6 +9,7 @@ import Typewriter from "typewriter-effect";
 import { useState } from "react";
 import Modal from "../../components/Modal";
 import { ModalContentForm } from '../../components/ModalContentForm'
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -43,9 +44,11 @@ export const Main = () => {
               <ModalContentForm/>
             </Modal>
           </Text>
-          <AvatarWrapper>
-            <Avatar src={avatar} />
-          </AvatarWrapper>
+          <Tilt>
+            <AvatarWrapper>
+              <Avatar src={avatar} />
+            </AvatarWrapper>
+          </Tilt>
         </FlexWrapper>
       </Container>
     </StyledMain>
@@ -56,6 +59,9 @@ const StyledMain = styled.section`
   min-height: 700px;
   display: flex;
   align-items: center;
+  ${Button} {
+    position: relative;
+  }
 
   @media ${theme.media.mobile} {
     ${FlexWrapper} {
@@ -70,7 +76,7 @@ const StyledMain = styled.section`
 `;
 
 const AvatarWrapper = styled.div`
-  width: 400px;
+  max-width: 400px;
   height: 400px;
   display: flex;
   position: relative;
@@ -80,7 +86,7 @@ const AvatarWrapper = styled.div`
   margin: 0 5px;
 
   @media ${theme.media.mobile} {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     margin-top: 130px;
   }

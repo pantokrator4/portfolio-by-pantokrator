@@ -2,28 +2,29 @@ import { PropsWithChildren } from "react";
 import ReactDOM from "react-dom";
 import { theme } from "../styles/Theme";
 import styled from "styled-components";
-import { Container } from "./Container";
 
 type ModalProps = {
-  isOpen: boolean
-  onClose: () => void
-}
+  isOpen: boolean;
+  onClose: () => void;
+};
 
-const Modal = ({isOpen, onClose, children}: PropsWithChildren<ModalProps>) => {
-  if (!isOpen) return null
+const Modal = ({
+  isOpen,
+  onClose,
+  children,
+}: PropsWithChildren<ModalProps>) => {
+  if (!isOpen) return null;
   return ReactDOM.createPortal(
     <ModalDiv>
       <ModalContentDiv>
-        <CloseButton onClick={onClose}>
-          &times;
-        </CloseButton>
+        <CloseButton onClick={onClose}>&times;</CloseButton>
         {children}
       </ModalContentDiv>
-    <ModalOverlayDiv onClick={onClose}></ModalOverlayDiv>
+      <ModalOverlayDiv onClick={onClose}></ModalOverlayDiv>
     </ModalDiv>,
     document.body
-  )
-}   
+  );
+};
 
 export default Modal;
 
@@ -37,7 +38,7 @@ const ModalDiv = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
-`
+`;
 
 const ModalContentDiv = styled.div`
   display: flex;
@@ -54,7 +55,7 @@ const ModalContentDiv = styled.div`
   position: relative;
   z-index: 1001;
   margin: 0 25px;
-`
+  `;
 
 const ModalOverlayDiv = styled.div`
   position: fixed;
@@ -65,7 +66,7 @@ const ModalOverlayDiv = styled.div`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 1000;
-`
+  `;
 
 const CloseButton = styled.button`
   position: absolute;
@@ -78,8 +79,6 @@ const CloseButton = styled.button`
   cursor: pointer;
 
   &:hover {
-      color: #2f4769;
-    }
-`
-
-
+    color: #2f4769;
+  }
+`;
