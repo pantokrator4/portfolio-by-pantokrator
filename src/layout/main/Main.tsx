@@ -132,8 +132,4 @@ const Text = styled.div`
     text-align: left;
     margin: 15px 0 60px 0;
   }
-
-  @media ${theme.media.mobile} {
-    //gap: 20px;
-  }
-`;
+  `;

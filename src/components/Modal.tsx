@@ -56,7 +56,9 @@ const ModalContentDiv = styled.div`
   position: relative;
   z-index: 1001;
   margin: 0 25px;
-  `;
+  transform: scale(1);
+  transition: ${theme.animations.transition};
+`;
 
 const ModalOverlayDiv = styled.div`
   position: fixed;
@@ -67,7 +69,9 @@ const ModalOverlayDiv = styled.div`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  `;
+  opacity: 100%;
+  transition: ${theme.animations.transition};
+`;
 
 const CloseButton = styled.button`
   position: absolute;

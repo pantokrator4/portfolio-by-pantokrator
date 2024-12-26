@@ -73,8 +73,9 @@ const MobilePopUp = styled.div<{ isOpen: boolean }>`
   flex-direction: column;
   gap: 50px;
   height: 100%;
-  //width: 100%;
-  background-color: hsla(220, 41%, 10%, 0.9);
+  //background-color: hsla(220, 41%, 10%, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   right: 0;
@@ -142,7 +143,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-          transform: rotate(-135deg) translateY(0);
+          transform: rotate(-45deg) translateY(0);
         `}
     }
 
@@ -159,7 +160,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-          transform: rotate(-45deg) translateY(0);
+          transform: rotate(45deg) translateY(0);
           width: 36px;
         `}
     }
