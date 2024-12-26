@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-by-pantokrator/static/css/main.31d6cfe0.css",
-    "main.js": "/portfolio-by-pantokrator/static/js/main.38ba65dd.js",
+    "main.css": "/portfolio-by-pantokrator/static/css/main.a4861c64.css",
+    "main.js": "/portfolio-by-pantokrator/static/js/main.d5eda2ae.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio-by-pantokrator/static/js/787.25eaef86.chunk.js",
     "static/media/image1.png": "/portfolio-by-pantokrator/static/media/image1.d0b5fc3d19ac06e317d4.png",
     "static/media/icons-sp.svg": "/portfolio-by-pantokrator/static/media/icons-sp.1abe45d760f802bb1b326d736dc0c9de.svg",
     "index.html": "/portfolio-by-pantokrator/index.html",
-    "main.38ba65dd.js.map": "/portfolio-by-pantokrator/static/js/main.38ba65dd.js.map",
+    "main.a4861c64.css.map": "/portfolio-by-pantokrator/static/css/main.a4861c64.css.map",
+    "main.d5eda2ae.js.map": "/portfolio-by-pantokrator/static/js/main.d5eda2ae.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio-by-pantokrator/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.38ba65dd.js"
+    "static/css/main.a4861c64.css",
+    "static/js/main.d5eda2ae.js"
   ]
 }
