@@ -11,8 +11,10 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: 600;
   color: ${theme.colors.font};
+  transition: 0.2s ease-in-out;
+  
   &:hover {
-    background: linear-gradient(90deg, #13acc789, #6979d186, #935dd684);
+    transform: scale(1.1);
   }
 
   @media ${theme.media.mobile} {

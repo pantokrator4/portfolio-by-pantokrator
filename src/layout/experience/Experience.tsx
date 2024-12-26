@@ -11,7 +11,7 @@ export const Expirience = () => {
     <ExpDiv id="expSectionId">
       <Container>
         <FlexWrapper direction="column">
-          <h2>Experience</h2>
+          <h2 className="animate__animated animate__bounceInLeft">Experience</h2>
           <div style={{ position: "relative" }}>
             <FlexWrapper
               id="iconContainer"

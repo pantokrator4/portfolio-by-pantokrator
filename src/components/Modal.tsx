@@ -50,6 +50,7 @@ const ModalContentDiv = styled.div`
   height: 100%;
   background: ${theme.colors.secondaryBg};
   padding: 20px;
+  border: 1px solid #2f4769;
   border-radius: 50px 0 50px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;

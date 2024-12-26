@@ -42,6 +42,7 @@ const StyledLogoNavig = styled.nav`
       display: flex;
       &:hover {
         transform: translateY(-3px);
+        transition: ${theme.animations.transition};
       }
     }
   }

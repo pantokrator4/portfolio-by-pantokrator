@@ -114,7 +114,7 @@ const AnimatedText = styled.p`
   
   margin: "10px 0 0 0";
   background: linear-gradient${theme.colors.tripleGradient};
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `
 

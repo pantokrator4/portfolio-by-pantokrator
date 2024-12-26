@@ -5,20 +5,21 @@ import { Container } from "../../components/Container";
 import { font } from "../../styles/Common";
 import { theme } from "../../styles/Theme";
 import { Fade } from "react-awesome-reveal";
+import 'animate.css';
 
 export const Projects = () => {
   return (
     <StyledProjects id="projectSectionId">
       <Container>
         <FlexWrapper direction="column">
-          <h2>Projects</h2>
+          <h2 className="animate__animated animate__fadeInLeft">Projects</h2>
           <FlexWrapper gap="40px" wrap="wrap" justify="center">
-            <Fade cascade={true}>
+            {/* <Fade cascade={true} damping={0.3}> */}
               <Proj projectName={"PROJECT 1"} />
               <Proj projectName={"PROJECT 2"} />
               <Proj projectName={"PROJECT 3"} />
               <Proj projectName={"PROJECT 4"} />
-            </Fade>
+            {/* </Fade> */}
           </FlexWrapper>
         </FlexWrapper>
       </Container>
@@ -48,3 +49,6 @@ const StyledProjects = styled.section`
     }
   }
 `;
+
+
+//animate__backInLeft

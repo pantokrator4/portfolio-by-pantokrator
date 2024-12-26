@@ -68,28 +68,31 @@ const StyledMobileMenu = styled.nav`
 
 const MobilePopUp = styled.div<{ isOpen: boolean }>`
   position: fixed;
+  justify-content: center;
+  display: flex;
   flex-direction: column;
   gap: 50px;
   height: 100%;
-  display: none;
+  //width: 100%;
   background-color: hsla(220, 41%, 10%, 0.9);
   top: 0;
   left: 0;
   right: 0;
   left: 0;
   z-index: 999;
+  transform: translateX(100%);
+  transition: .8s ease-in-out;
 
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      transform: translateX(0);
     `}
 
   ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 
@@ -117,11 +120,13 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: absolute;
     left: 40px;
     bottom: 50px;
+    transition: ${theme.animations.transition};
 
     ${(props) =>
       props.isOpen &&
       css<{ isOpen: boolean }>`
         background-color: rgba(255, 255, 255, 0);
+        
       `}
 
     &::before {
@@ -132,6 +137,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.font};
       position: absolute;
       transform: translateY(-10px);
+      transition: ${theme.animations.transition};
 
       ${(props) =>
         props.isOpen &&
@@ -148,6 +154,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.font};
       position: absolute;
       transform: translateY(10px);
+      transition: ${theme.animations.transition};
 
       ${(props) =>
         props.isOpen &&

@@ -5,7 +5,7 @@ import { theme } from "../styles/Theme";
 export const ModalContentForm = () => {
   return (
     <StyledModalContentForm>
-      <span>Fill the form</span>
+      <span className="animate__animated animate__bounceIn">Fill the form</span>
       <StyledForm>
         <Field placeholder={"Name"} type="text" required/>
         <Field placeholder={"Email"} type="text" required/>

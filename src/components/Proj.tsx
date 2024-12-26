@@ -19,7 +19,7 @@ export const Proj = (props: projectNamePropsType) => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Button>Look It Up</Button>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><Button>Look It Up</Button></a>
       </FlexWrapper>
     </StyledProj>
   );

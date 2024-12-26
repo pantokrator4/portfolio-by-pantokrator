@@ -22,14 +22,16 @@ export const TextNavig = () => {
 const StyledTextNavig = styled.nav`
   display: flex;
   align-items: center;
+  
   ul {
     display: flex;
     gap: 80px;
 
-    li > a {
-      &:hover {
+  li > a {
+    transition: ${theme.animations.transition};
+    &:hover {
         background: linear-gradient${theme.colors.tripleGradient};
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }

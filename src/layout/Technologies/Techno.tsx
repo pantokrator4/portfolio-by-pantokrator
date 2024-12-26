@@ -11,7 +11,7 @@ export const Techno = () => {
     <StyledTechno id="technoSectionId">
       <Container>
         <FlexWrapper direction="column">
-          <TitleText>Technologies</TitleText>
+          <TitleText className="animate__animated animate__bounceInLeft">Technologies</TitleText>
           <FlexWrapper direction="column" align="center" gap="25px">
             <ProgressLine lineName={"Html"} lineWidth={"60%"} />
             <ProgressLine lineName={"Css, Sass"} lineWidth={"45%"} />

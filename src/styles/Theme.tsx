@@ -7,6 +7,10 @@ export const theme = {
     font: "#FFFFFF",
   },
 
+  animations: {
+    transition: ".2s ease-in-out"
+  },
+
   media: {
     tablet: "screen and (max-width: 768px)",
     mobile: "screen and (max-width: 576px)",
