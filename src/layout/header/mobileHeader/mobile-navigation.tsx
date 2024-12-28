@@ -76,6 +76,7 @@ const MobilePopUp = styled.div<{ isOpen: boolean }>`
   //background-color: hsla(220, 41%, 10%, 0.9);
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   right: 0;

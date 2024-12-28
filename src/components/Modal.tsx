@@ -71,6 +71,7 @@ const ModalOverlayDiv = styled.div<{ isOpen: boolean }>`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   z-index: 1000;
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};

@@ -26,6 +26,7 @@ export const ModalContentForm = ({onClose}: ModalContentFormProps) => {
         () => {
           console.log('SUCCESS!');
           notify();
+          onClose();
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -42,7 +43,7 @@ export const ModalContentForm = ({onClose}: ModalContentFormProps) => {
         <Field placeholder={"Subject"} type="text" required name={"subject"}/>
         <Field placeholder={"Email"} type="email" required name={"email"}/>
         <Field placeholder={"Message"} as={"textarea"} name={"message"}/>
-        <Button type={"submit"} onClick={onClose}>submit</Button>
+        <Button type={"submit"}>submit</Button>
       </StyledForm>
     </StyledModalContentForm>
   )
@@ -89,6 +90,7 @@ const Field = styled.input`
   padding: 7px 15px;
   font-family: "Poppins";
   font-weight: 500;
+  font-size: 16px;
   
   &::placeholder {
     color: #2f4769;
