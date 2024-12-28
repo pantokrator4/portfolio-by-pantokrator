@@ -3,10 +3,16 @@ import { Button } from "./Button";
 import { theme } from "../styles/Theme";
 import emailjs from '@emailjs/browser';
 import { ElementRef, useRef } from "react";
+import { toast } from 'react-toastify';
 
-export const ModalContentForm = () => {
+type ModalContentFormProps = {
+  onClose: () => void;
+};
+
+export const ModalContentForm = ({onClose}: ModalContentFormProps) => {
   const form = useRef<ElementRef<"form">>(null);
-
+  const notify = () => toast.success("Form has been sent");
+  
   const sendEmail = (e: any) => {
     e.preventDefault();
 
@@ -19,6 +25,7 @@ export const ModalContentForm = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          notify();
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -29,12 +36,13 @@ export const ModalContentForm = () => {
   return (
     <StyledModalContentForm>
       <span>Fill the form</span>
+      
       <StyledForm ref={form} onSubmit={sendEmail}>
         <Field placeholder={"Name"} type="text" required name={"user_name"}/>
         <Field placeholder={"Subject"} type="text" required name={"subject"}/>
         <Field placeholder={"Email"} type="email" required name={"email"}/>
         <Field placeholder={"Message"} as={"textarea"} name={"message"}/>
-        <Button type={"submit"}>submit</Button>
+        <Button type={"submit"} onClick={onClose}>submit</Button>
       </StyledForm>
     </StyledModalContentForm>
   )

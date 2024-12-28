@@ -2,6 +2,7 @@ import { PropsWithChildren } from "react";
 import ReactDOM from "react-dom";
 import { theme } from "../styles/Theme";
 import styled from "styled-components";
+import { ModalContentForm } from "./ModalContentForm";
 
 type ModalProps = {
   isOpen: boolean;
@@ -12,11 +13,12 @@ const Modal = ({
   isOpen,
   onClose,
   children,
-}: PropsWithChildren<ModalProps>) => {
+}: PropsWithChildren<ModalProps>) => { 
   return ReactDOM.createPortal(
     <ModalDiv isOpen={isOpen}>
       <ModalContentDiv isOpen={isOpen}>
         <CloseButton onClick={onClose}>&times;</CloseButton>
+        <ModalContentForm onClose={onClose} />
         {children}
       </ModalContentDiv>
       <ModalOverlayDiv isOpen={isOpen} onClick={onClose}></ModalOverlayDiv>
