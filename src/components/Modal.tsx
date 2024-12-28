@@ -13,14 +13,13 @@ const Modal = ({
   onClose,
   children,
 }: PropsWithChildren<ModalProps>) => {
-  if (!isOpen) return null;
   return ReactDOM.createPortal(
-    <ModalDiv>
-      <ModalContentDiv>
+    <ModalDiv isOpen={isOpen}>
+      <ModalContentDiv isOpen={isOpen}>
         <CloseButton onClick={onClose}>&times;</CloseButton>
         {children}
       </ModalContentDiv>
-      <ModalOverlayDiv onClick={onClose}></ModalOverlayDiv>
+      <ModalOverlayDiv isOpen={isOpen} onClick={onClose}></ModalOverlayDiv>
     </ModalDiv>,
     document.body
   );
@@ -28,7 +27,7 @@ const Modal = ({
 
 export default Modal;
 
-const ModalDiv = styled.div`
+const ModalDiv = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -38,9 +37,11 @@ const ModalDiv = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  transition: .5s ease-in-out;
 `;
 
-const ModalContentDiv = styled.div`
+const ModalContentDiv = styled.div<{ isOpen: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,11 +57,12 @@ const ModalContentDiv = styled.div`
   position: relative;
   z-index: 1001;
   margin: 0 25px;
-  transform: scale(1);
-  transition: ${theme.animations.transition};
+  transform: ${({ isOpen }) => (isOpen ? "scale(1)" : "scale(0)")};
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  transition: .5s ease-in-out;
 `;
 
-const ModalOverlayDiv = styled.div`
+const ModalOverlayDiv = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -69,8 +71,9 @@ const ModalOverlayDiv = styled.div`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  opacity: 100%;
-  transition: ${theme.animations.transition};
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  transition: .5s ease-in-out;
 `;
 
 const CloseButton = styled.button`

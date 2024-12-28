@@ -87,7 +87,7 @@ const MobilePopUp = styled.div<{ isOpen: boolean }>`
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      transform: translateX(0);
+    transform: translateX(0);
     `}
 
   ul {
@@ -110,7 +110,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   top: -100px;
   right: -100px;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   border-style: none;
 
   span {
@@ -126,7 +126,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     ${(props) =>
       props.isOpen &&
       css<{ isOpen: boolean }>`
-        background-color: rgba(255, 255, 255, 0);
+        background-color: transparent;
         
       `}
 

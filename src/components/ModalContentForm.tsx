@@ -1,15 +1,39 @@
 import styled from "styled-components";
 import { Button } from "./Button";
 import { theme } from "../styles/Theme";
+import emailjs from '@emailjs/browser';
+import { ElementRef, useRef } from "react";
 
 export const ModalContentForm = () => {
+  const form = useRef<ElementRef<"form">>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if(!form.current) return
+
+    emailjs
+      .sendForm('service_yxomwra', 'template_bp0xuhf', form.current, {
+        publicKey: 'YzKVRb6YA6hli78c2',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <StyledModalContentForm>
-      <span className="animate__animated animate__bounceIn">Fill the form</span>
-      <StyledForm>
-        <Field placeholder={"Name"} type="text" required/>
-        <Field placeholder={"Email"} type="text" required/>
-        <Field placeholder={"Message"} as={"textarea"} />
+      <span>Fill the form</span>
+      <StyledForm ref={form} onSubmit={sendEmail}>
+        <Field placeholder={"Name"} type="text" required name={"user_name"}/>
+        <Field placeholder={"Subject"} type="text" required name={"subject"}/>
+        <Field placeholder={"Email"} type="email" required name={"email"}/>
+        <Field placeholder={"Message"} as={"textarea"} name={"message"}/>
         <Button type={"submit"}>submit</Button>
       </StyledForm>
     </StyledModalContentForm>

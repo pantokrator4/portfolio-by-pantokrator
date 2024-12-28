@@ -5,6 +5,7 @@
   "homepage": "https://pantokrator4.github.io/portfolio-by-pantokrator",
   "dependencies": {
     "@babel/core": "7.16.0",
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
     "@svgr/webpack": "5.5.0",
